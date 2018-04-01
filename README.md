@@ -1,13 +1,13 @@
-# react-start
+# react-starter
 react-starter is a simple starting point for Single Page Apps using React, Babel, and Webpack.
 
 ## Folder Structure
-```.
-+-- dist
+```
+.
 +-- public
 | +-- favicon.ico
 | +-- index.html
-| +-- maifest.json
+| +-- manifest.json
 +-- src
 | +-- Components
 |   +-- Message
@@ -18,6 +18,8 @@ react-starter is a simple starting point for Single Page Apps using React, Babel
 | +-- index.js
 +-- .babelrc
 +-- .eslintrc
++-- .gitignore
++-- CONTRIBUTING
 +-- LICENSE
 +-- package-lock.json
 +-- package.json
