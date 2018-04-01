@@ -33,7 +33,7 @@ react-starter is a simple starting point for Single Page Apps using React, Babel
 Clone this repo and install dependencies with `npm install`. 
 
 ### Starting The Server
-To start the server asnd start hacking, run
+To start the server and start hacking, run
 ```
 npm start
 ```
