@@ -5,6 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development -d",
+    "build": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jedai Saboteur",
