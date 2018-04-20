@@ -4,7 +4,7 @@
   "description": "A simple react.js boilerplate",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development -d",
+    "start": "webpack-dev-server --mode development",
     "build": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,11 +23,9 @@
     "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
-    "react-hot-loader": "^4.0.0",
     "webpack": "^4.4.1"
   }
 }
