@@ -35,3 +35,6 @@ npm run build
 ```
 
 This will bundle your files at `<projectRoot>/dist/bundle.js`. `index.html` already references this location, allowing you build and open `index.html` without having to start the server. Note that there are no optimizations in place at this time.
+
+#### Additional Credits
+The swiss army knife svg is by [Delapouite](http://game-icons.net/delapouite/originals/swiss-army-knife.html) under CC BY 3.0
