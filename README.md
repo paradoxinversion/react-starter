@@ -2,36 +2,10 @@
 
 react-starter is a simple starting point for Single Page Apps using React, Babel, and Webpack.
 
-## Folder Structure
+## Getting Started
 
-```JAVASCRIPT
-.
-+-- public
-| +-- favicon.ico
-| +-- index.html
-| +-- manifest.json
-+-- src
-| +-- Components
-|   +-- Message
-|     +-- Message.css
-|     +-- Message.js
-| +-- App.css
-| +-- App.js
-| +-- index.js
-+-- .babelrc
-+-- .eslintrc
-+-- .gitignore
-+-- CONTRIBUTING
-+-- LICENSE
-+-- package-lock.json
-+-- package.json
-+-- README.md
-+-- webpack.config.js
-```
+_(Note: this project was created in Node v9.3.0)_
 
-## Usage
-
-(Note: this project was created in Node v9.3.0)
 Clone this repo and install dependencies with `npm install`.
 
 ### Starting The Dev Server
@@ -59,4 +33,4 @@ To bundle your files, run
 npm run build
 ```
 
-This will bundle your files at `<projectRoot>/dist/bundle.js`. `index.html` already references this location, allowing you build and open `index.html` without having to start the server. Note that there are no optimizations in place at this time. 
+This will bundle your files at `<projectRoot>/dist/bundle.js`. `index.html` already references this location, allowing you build and open `index.html` without having to start the server. Note that there are no optimizations in place at this time.
