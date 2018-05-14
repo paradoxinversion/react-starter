@@ -27,6 +27,7 @@ Static Assets are served from the `/public` folder.
 Stylesheets are bundled along with project files in the `.src` folder, so you can divide your stylesheets by component (or any other configuration you plan)
 
 #Bundling
+
 To bundle your files, run
 
 ```BASH
