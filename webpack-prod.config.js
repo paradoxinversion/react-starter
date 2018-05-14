@@ -18,7 +18,7 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.(png|jpg|jpeg|gif|pdf)/,
+        test: /\.(png|jpg|jpeg|gif|svg|pdf)/,
         exclude: /(node_modules|bower_components)/,
         loader: "file-loader",
         options: {

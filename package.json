@@ -20,10 +20,12 @@
     "eslint-plugin-react": "^7.7.0",
     "file-loader": "^1.1.11",
     "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
+    "normalize.css": "^8.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
