@@ -5,7 +5,6 @@ import "./App.css";
 import armyKnife from "./swiss-army-knife.svg";
 
 class App extends Component {
-  state = { boo: "hoo" };
   render() {
     return (
       <div className="App">

@@ -4,7 +4,7 @@ const bundlePath = path.resolve(__dirname, "dist/");
 
 module.exports = {
   mode: "production",
-  entry: "./src/index.js",
+  entry: ["babel-polyfill", "./src/index.js"],
   module: {
     rules: [
       {
