@@ -1,7 +1,6 @@
 const path = require("path");
-// const webpack = require("webpack");
-const bundlePath = path.resolve(__dirname, "dist/");
-
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 module.exports = {
   mode: "production",
   entry: ["babel-polyfill", "./src/index.js"],
@@ -29,9 +28,15 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    publicPath: bundlePath,
+    publicPath: path.resolve(__dirname, "dist/"),
     filename: "bundle.js"
   },
 
-  plugins: []
+  plugins: [
+    new CleanWebpackPlugin(["dist"]),
+    new HtmlWebpackPlugin({
+      title: "React Starter",
+      template: path.resolve(__dirname, "public/index.html")
+    })
+  ]
 };
