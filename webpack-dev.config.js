@@ -1,17 +1,20 @@
 const path = require("path");
 const webpack = require("webpack");
-const bundlePath = path.resolve(__dirname, "dist/");
 
 module.exports = {
   mode: "development",
   entry: ["babel-polyfill", "./src/index.js"],
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
-        options: { presets: ["env"], plugins: ["transform-class-properties"] }
+        options: {
+          presets: ["env", "react"],
+          plugins: ["transform-class-properties"]
+        }
       },
       {
         test: /\.css$/,
@@ -28,13 +31,18 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    publicPath: bundlePath,
+    path: path.resolve(__dirname, "dist/"),
+    publicPath: "/dist/",
     filename: "bundle.js"
   },
   devServer: {
     contentBase: path.join(__dirname, "public"),
     port: 3000,
-    publicPath: "http://localhost:3000/dist"
+    publicPath: "http://localhost:3000/dist/",
+    hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
