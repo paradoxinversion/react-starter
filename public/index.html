@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="favicon.ico" />
   <title>React Starter</title>
 </head>
 
@@ -14,19 +14,15 @@
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
-  <!-- <script src="../dist/bundle.js"></script> -->
-  <!--
-      Note: this page is a great way to try React but it's not suitable for production.
-      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
-
-      To set up a production-ready React build environment, follow these instructions:
-      * https://reactjs.org/docs/add-react-to-a-new-app.html
-      * https://reactjs.org/docs/add-react-to-an-existing-app.html
-
-      You can also use React without JSX, in which case you can remove Babel:
-      * https://reactjs.org/docs/react-without-jsx.html
-      * https://reactjs.org/docs/cdn-links.html
-    -->
+  <!-- The following snippet can be used in production settings to target the bundle -->
+  <script>
+    const baseURL = window.location.host.includes("localhost")
+      ? "http://localhost:3000/"
+      : "URL_TO_DEPLOYED_APP";
+    const bundleScript = document.createElement('script');
+    bundleScript.src = baseURL + "dist/bundle.js";
+    document.getElementsByTagName('script')[0].parentNode.appendChild(bundleScript);
+  </script>
 </body>
 
 </html>

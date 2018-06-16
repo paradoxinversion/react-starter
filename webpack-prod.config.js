@@ -21,14 +21,14 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: "file-loader",
         options: {
-          name: "/[name].[ext]"
+          name: "/images/[name].[ext]"
         }
       }
     ]
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    publicPath: path.resolve(__dirname, "dist/"),
+    path: path.resolve(__dirname, "dist/"),
     filename: "bundle.js"
   },
 
